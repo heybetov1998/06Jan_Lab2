@@ -32,52 +32,47 @@
             //Console.WriteLine($"\nRashadin derecesi: {rashadDegree}\nAydanin derecesi: {aydanDegree}");
             #endregion
             #region Task 13 - İki eyni ölçülü matrisin cəmini tapan proqram yazın
-            //Console.Write("Matrislerin setr sayini daxil edin: ");
-            //int n = int.Parse(Console.ReadLine());
-            //Console.Write("Matrislerin sutun sayini daxil edin: ");
-            //int m = int.Parse(Console.ReadLine());
+            Console.Write("Matrislerin setr sayini daxil edin: ");
+            int n = int.Parse(Console.ReadLine());
+            Console.Write("Matrislerin sutun sayini daxil edin: ");
+            int m = int.Parse(Console.ReadLine());
 
-            //int[,] arr1 = new int[n, m];
-            //int[,] arr2 = new int[n, m];
-            //int[,] arr3 = new int[n, m];
+            int[,] arr1 = new int[n, m];
+            int[,] arr2 = new int[n, m];
+            int[,] arr3 = new int[n, m];
 
-            //Console.WriteLine("\nBirinci matris:");
-            //for (int i = 0; i < n; i++)
-            //{
-            //    for (int j = 0; j < m; j++)
-            //    {
-            //        Console.Write($"arr1[{i},{j}] = ");
-            //        arr1[i, j] = int.Parse(Console.ReadLine());
-            //    }
-            //}
+            Console.WriteLine("\nBirinci matris:");
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = 0; j < m; j++)
+                {
+                    Console.Write($"arr1[{i},{j}] = ");
+                    arr1[i, j] = int.Parse(Console.ReadLine());
+                }
+            }
 
-            //Console.WriteLine("\nIkinci matris:");
-            //for (int i = 0; i < n; i++)
-            //{
-            //    for (int j = 0; j < m; j++)
-            //    {
-            //        Console.Write($"arr2[{i},{j}] = ");
-            //        arr2[i, j] = int.Parse(Console.ReadLine());
-            //    }
-            //}
+            Console.WriteLine("\nIkinci matris:");
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = 0; j < m; j++)
+                {
+                    Console.Write($"arr2[{i},{j}] = ");
+                    arr2[i, j] = int.Parse(Console.ReadLine());
 
-            //for (int i = 0; i < n; i++)
-            //{
-            //    for (int j = 0; j < m; j++)
-            //    {
-            //        arr3[i, j] = arr1[i, j] + arr2[i, j];
-            //    }
-            //}
+                    //massivlerin cemini hesablayir
+                    arr3[i, j] = arr1[i, j] + arr2[i, j];
+                }
+            }
 
-            //Console.WriteLine("\nNetice:");
-            //for (int i = 0; i < n; i++)
-            //{
-            //    for (int j = 0; j < m; j++)
-            //    {
-            //        Console.Write($"{arr3[i, j]} ");
-            //    }
-            //    Console.WriteLine();
-            //}
+            Console.WriteLine("\nNetice:");
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = 0; j < m; j++)
+                {
+                    Console.Write($"{arr3[i, j]} ");
+                }
+                Console.WriteLine();
+            }
             #endregion
         }
     }
